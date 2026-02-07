@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>torodem@terminal:~$</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0e27;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            color: #a8b5d1;
+            line-height: 1.6;
+        }
+
+        .terminal {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #0d1117;
+            border: 2px solid #30363d;
+            padding: 30px;
+        }
+
+        .prompt {
+            color: #7c3aed;
+            margin-bottom: 5px;
+        }
+
+        .command {
+            color: #60a5fa;
+        }
+
+        .output {
+            color: #a8b5d1;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #a78bfa;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 10px;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: #60a5fa;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav a:hover {
+            color: #a78bfa;
+            text-decoration: underline;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        .ascii-art {
+            color: #6b7280;
+            font-size: 0.85em;
+            line-height: 1.2;
+            margin: 20px 0;
+        }
+
+        .highlight {
+            color: #a78bfa;
+        }
+
+        .comment {
+            color: #6b7280;
+        }
+
+        pre {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="prompt">torodem@system:~$</div>
+        
+        <h1>torodem</h1>
+        
+        <nav>
+            <span class="prompt">$</span> 
+            <a href="index.html">home</a>
+            <a href="gallery.html">gallery</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <div class="section">
+            <div class="prompt">$ cat about.txt</div>
+            <div class="output">
+                <p>welcome to my personal space on the web.</p>
+                <p>this is where i document projects, experiments, and ideas.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="ascii-art">
+                <pre>
+    ┌─────────────────────────────┐
+    │                             │
+    │    ██████╗  ██████╗ ██╗     │
+    │    ██╔══██╗██╔═══██╗██║     │
+    │    ██║  ██║██║   ██║██║     │
+    │    ██║  ██║██║   ██║██║     │
+    │    ██████╔╝╚██████╔╝███████╗│
+    │    ╚═════╝  ╚═════╝ ╚══════╝│
+    │                             │
+    └─────────────────────────────┘
+                </pre>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="prompt">$ whoami</div>
+            <div class="output">
+                <p><span class="highlight">torodem</span></p>
+                <p class="comment"># digital creator / experimenter</p>
+                <p class="comment"># interests: generative art, installations, code</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="prompt">$ ls -la current_projects/</div>
+            <div class="output">
+                <p>drwxr-xr-x  experimental_systems/</p>
+                <p>drwxr-xr-x  digital_fabrication/</p>
+                <p>drwxr-xr-x  interactive_installations/</p>
+                <p>drwxr-xr-x  generative_works/</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="prompt">$ echo $STATUS</div>
+            <div class="output">
+                <p>[✓] creative processes active</p>
+                <p>[✓] open to collaborations</p>
+                <p>[✓] accepting new projects</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="prompt">$</div>
+            <div class="output">
+                <span class="comment"># navigate using the links above</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

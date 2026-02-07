@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>torodem@terminal:~/contact$</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0e27;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            color: #a8b5d1;
+            line-height: 1.6;
+        }
+
+        .terminal {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #0d1117;
+            border: 2px solid #30363d;
+            padding: 30px;
+        }
+
+        .prompt {
+            color: #7c3aed;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            color: #a78bfa;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 10px;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: #60a5fa;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav a:hover {
+            color: #a78bfa;
+            text-decoration: underline;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        .output {
+            color: #a8b5d1;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contact-box {
+            background: #161b22;
+            border: 1px solid #30363d;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .contact-item {
+            margin: 15px 0;
+            padding: 10px 0;
+        }
+
+        .contact-label {
+            color: #7c3aed;
+            display: inline-block;
+            width: 120px;
+        }
+
+        .contact-value {
+            color: #60a5fa;
+        }
+
+        .contact-value a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        .contact-value a:hover {
+            color: #a78bfa;
+            text-decoration: underline;
+        }
+
+        .comment {
+            color: #6b7280;
+        }
+
+        .ascii-diagram {
+            color: #6b7280;
+            font-size: 0.85em;
+            line-height: 1.2;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .status-line {
+            color: #8b92a8;
+            margin: 10px 0;
+        }
+
+        .divider {
+            border-top: 1px solid #30363d;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="prompt">torodem@system:~/contact$</div>
+        
+        <h1>contact</h1>
+        
+        <nav>
+            <span class="prompt">$</span> 
+            <a href="index.html">home</a>
+            <a href="gallery.html">gallery</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <div class="section">
+            <div class="prompt">$ cat contact_info.txt</div>
+            <div class="output">
+                <p class="comment"># reach out for collaborations, questions, or ideas</p>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <div class="contact-item">
+                <span class="contact-label">email:</span>
+                <span class="contact-value">
+                    <a href="mailto:torodem64@gmail.com">torodem64@gmail.com</a>
+                </span>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-label">github:</span>
+                <span class="contact-value">
+                    <a href="https://github.com/torodem" target="_blank">github.com/torodem</a>
+                </span>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-label">response time:</span>
+                <span class="contact-value">24-48 hours</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="prompt">$ cat availability.txt</div>
+            <div class="output">
+                <div class="status-line">[✓] open to collaborations</div>
+                <div class="status-line">[✓] accepting project inquiries</div>
+                <div class="status-line">[✓] available for commissions</div>
+                <div class="status-line">[✓] interested in experimental work</div>
+            </div>
+        </div>
+
+        <div class="ascii-diagram">
+            <pre>
+    ╔════════════════════════════╗
+    ║                            ║
+    ║    [TRANSMISSION READY]    ║
+    ║                            ║
+    ║         ┌──────┐           ║
+    ║         │ SEND │           ║
+    ║         └──┬───┘           ║
+    ║            │               ║
+    ║         ┌──▼───┐           ║
+    ║         │ROUTER│           ║
+    ║         └──┬───┘           ║
+    ║            │               ║
+    ║         ┌──▼───┐           ║
+    ║         │INBOX │           ║
+    ║         └──────┘           ║
+    ║                            ║
+    ╚════════════════════════════╝
+            </pre>
+        </div>
+
+        <div class="section">
+            <div class="prompt">$ echo $INTERESTS</div>
+            <div class="output">
+                <p class="comment"># topics of interest for collaboration:</p>
+                <p>- generative systems</p>
+                <p>- interactive installations</p>
+                <p>- experimental media</p>
+                <p>- creative coding</p>
+                <p>- digital fabrication</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+            <div class="prompt">$</div>
+            <div class="output">
+                <span class="comment"># looking forward to hearing from you</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

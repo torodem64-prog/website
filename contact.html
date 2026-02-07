@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>torodem@terminal:~/contact$</title>
+    <style>
+        @keyframes flicker {
+            0% { opacity: 0.97; }
+            5% { opacity: 0.95; }
+            10% { opacity: 0.97; }
+            15% { opacity: 0.93; }
+            20% { opacity: 0.97; }
+            25% { opacity: 0.95; }
+            30% { opacity: 0.97; }
+            35% { opacity: 0.96; }
+            40% { opacity: 0.97; }
+            45% { opacity: 0.95; }
+            50% { opacity: 0.97; }
+            55% { opacity: 0.93; }
+            60% { opacity: 0.97; }
+            65% { opacity: 0.96; }
+            70% { opacity: 0.97; }
+            75% { opacity: 0.95; }
+            80% { opacity: 0.97; }
+            85% { opacity: 0.93; }
+            90% { opacity: 0.97; }
+            95% { opacity: 0.95; }
+            100% { opacity: 0.97; }
+        }
+
+        @keyframes scanline {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100%); }
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0e27;
+            background-image: 
+                linear-gradient(45deg, #1a1f3a 25%, transparent 25%),
+                linear-gradient(-45deg, #1a1f3a 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #1a1f3a 75%),
+                linear-gradient(-45deg, transparent 75%, #1a1f3a 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            color: #a8b5d1;
+            line-height: 1.6;
+        }
+
+        .terminal {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #0d1117;
+            border: 2px solid #30363d;
+            padding: 30px;
+            position: relative;
+            animation: flicker 4s infinite;
+        }
+
+        .terminal::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                rgba(18, 16, 16, 0) 50%,
+                rgba(0, 0, 0, 0.25) 50%
+            );
+            background-size: 100% 4px;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .terminal::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            animation: scanline 8s linear infinite;
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        .terminal > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .prompt {
+            color: #7c3aed;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            color: #a78bfa;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 10px;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: #60a5fa;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav a:hover {
+            color: #a78bfa;
+            text-decoration: underline;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        .output {
+            color: #a8b5d1;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contact-box {
+            background: #161b22;
+            border: 1px solid #30363d;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .contact-item {
+            margin: 15px 0;
+            padding: 10px 0;
+        }
+
+        .contact-label {
+            color: #7c3aed;
+            display: inline-block;
+            width: 120px;
+        }
+
+        .contact-value {
+            color: #60a5fa;
+        }
+
+        .contact-value a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        .contact-value a:hover {
+            color: #a78bfa;
+            text-decoration: underline;
+        }
+
+        .comment {
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="prompt">torodem@system:~/contact$</div>
+        
+        <h1>contact</h1>
+        
+        <nav>
+            <span class="prompt">$</span> 
+            <a href="index.html">home</a>
+            <a href="gallery.html">gallery</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <div class="section">
+            <div class="prompt">$ cat contact_info.txt</div>
+            <div class="output">
+                <p class="comment"># reach out for collaborations or questions</p>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <div class="contact-item">
+                <span class="contact-label">email:</span>
+                <span class="contact-value">
+                    <a href="mailto:torodem64@gmail.com">torodem64@gmail.com</a>
+                </span>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-label">github:</span>
+                <span class="contact-value">
+                    <a href="https://github.com/torodem" target="_blank">github.com/torodem</a>
+                </span>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-label">response time:</span>
+                <span class="contact-value">24-48 hours</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="prompt">$ echo $INTERESTS</div>
+            <div class="output">
+                <p class="comment"># topics of interest:</p>
+                <p>- generative systems</p>
+                <p>- interactive installations</p>
+                <p>- experimental media</p>
+                <p>- creative coding</p>
+                <p>- digital fabrication</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="prompt">$</div>
+            <div class="output">
+                <span class="comment"># looking forward to hearing from you</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
